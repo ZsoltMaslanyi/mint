@@ -474,7 +474,7 @@ defmodule Mint.Core.Transport.SSL do
       ciphers: default_ciphers(),
       server_name_indication: hostname,
       versions: @default_versions,
-      verify: :verify_peer,
+      verify: :verify_none,
       depth: 4,
       secure_renegotiate: true,
       reuse_sessions: true
